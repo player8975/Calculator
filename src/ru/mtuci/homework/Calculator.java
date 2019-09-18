@@ -51,12 +51,16 @@ public class Calculator {
     if ("+".equals(operation)) { // если операция равно +
       System.out.println("Результат: " + calculator.sum(a, b));
     } else if ("-".equals(operation)) {
-      System.out.println("Результат: " + calculator.subtract(a, b));
-    } else if ("*".equals(operation)) {
+      //TODO Напиши вызов метода вычитания и выпод результата здесь
+
+    } //TODO Допиши проверки для умножения и деления
+
+    if ("*".equals(operation)) {
       System.out.println("Результат: " + calculator.multiply(a, b));
-    }else if ("/".equals(operation)) {
+    } else if ("/".equals(operation)) {
       System.out.println("Результат: " + calculator.divide(a, b));
     }
+
 
   }
 
@@ -72,16 +76,20 @@ public class Calculator {
   }
 
 
+<<<<<<< Updated upstream
   private double subtract(double a, double b) {
-    return a - b;
+    //TODO Напиши реализацию этого метода, чтобы он выполнял вычитание,
+    // сейчас всегда возвращается ноль.
+    return 0;
   }
+=======
+  private double subtract(double a, double b) { return a - b }
 
-  private double multiply(double a, double b) {
-    return a * b;
-  }
 
-  private double divide(double a, double b) {
-    return a / b;
-  }
+  private double multiply(double a, double b) { return a * b }
+>>>>>>> Stashed changes
+
+  private double divide(double a, double b) { return a / b }
+  //TODO Допиши по аналогии еще два метода: multiply, divide
 
 }
